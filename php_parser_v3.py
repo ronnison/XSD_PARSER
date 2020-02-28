@@ -25,27 +25,6 @@ class Atributo:
         except IndexError:
             return self.__lista[-1]
     
-    ''' Versao 0
-    def __init__(self):
-        self.__nome = []
-        self.__tipo = []
-
-    @property
-    def nome (self):
-        return self.__nome
-
-    @property
-    def tipo (self):
-        return self.__tipo
-
-    @nome.setter
-    def nome(self, nome):
-        self.__nome.append(nome)
-
-    @tipo.setter
-    def tipo(self, tipo):
-        self.__tipo.append(tipo)
-    '''
 
 class Classe:
     
@@ -81,19 +60,6 @@ class Classe:
     def get_atributo(self, index):
         #return self.__atributo.get_on_lista(index)
         return [element for i, element in self.__atributo.lista if i == index]
-        '''
-        for i
-
-
-        , element in enumerate(self.__atributo.lista):
-            if i == index:
-                return element
-
-        for i in range(len(self.__atributo.lista)):
-            self.__atributo.lista[i]
-
-        return [element for i, element in self.__atributo.lista if i == index]
-        '''
 
 
 pasta = "xsd"
@@ -148,19 +114,28 @@ for xsd in xsds:
         list = i.split();
         #count = int(count) + 1
         #print('\tpublic $' + list[1])
-        arq.write('\tpublic $' + list[1] + ';')
+        arq.write('\tprivate $' + list[1] + ';')
         arq.write('\n')
     #print('\n\t// Methods Getter and Setter')
     arq.write('\n\t// Methods Construtor and Destrutor')
     arq.write('\n')
-    '''
-    arq.write('\tfunction __construct ($' + classe.get_on_lista[0] + ', $' + classe.get_on_lista[1] + ';')
-    arq.write('\n')
+    p_aram = '';
+    br = 0;
     for i in classe.lista:
+        br = br + 1;
         list = i.split();
-        arq.write('\tfunction __construct (' + list[1] + ';')
-        arq.write('\n')
-    '''    
+        p_aram += '$' + list[1] + ', ';
+    p_aram = p_aram[0:len(p_aram)-2];
+    #print(p_aram);
+    #print();
+    arq.write('\tfunction __construct (' + p_aram + '){')
+    arq.write('\n');
+    p_aram = p_aram.split(', ');
+    for i in p_aram:
+        arq.write('\t\t$this->' + i[1:len(i)] + ' = ' + i + ';');
+        arq.write('\n');
+    arq.write('\t}');
+    
     arq.write('\n\t// Methods Getter and Setter')
     for i in classe.lista:
         list = i.split();
