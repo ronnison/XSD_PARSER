@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+		xmlns="http://boavistaservicos.com.br/familia/acerta/positivo/pf/confirmacao_cep" 
+		targetNamespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/confirmacao_cep" 
+		elementFormDefault="qualified">
+
+
+	<xs:element name="confirmacao_cep">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="tamanhoRegistro" type="xs:string" minOccurs="0" />
+				<xs:element name="tipoRegistro" type="xs:string" minOccurs="0" />
+				<xs:element name="registro" type="xs:string" minOccurs="0" />
+				<xs:element name="cep" type="xs:string" minOccurs="0" />
+				<xs:element name="endereco" type="xs:string" minOccurs="0" />
+				<xs:element name="bairro" type="xs:string" minOccurs="0" />
+				<xs:element name="cidade" type="xs:string" minOccurs="0" />
+				<xs:element name="uf" type="xs:string" minOccurs="0" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>

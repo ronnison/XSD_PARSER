@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+		xmlns="http://boavistaservicos.com.br/familia/acerta/positivo/pf/identificacao" 
+		targetNamespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/identificacao" 
+		elementFormDefault="qualified">
+
+
+	<xs:element name="identificacao">
+		<xs:complexType>
+			<xs:sequence>
+				
+				<xs:element name="tamanhoRegistro" type="xs:string" minOccurs="0" />
+				<xs:element name="tipoRegistro" type="xs:string" minOccurs="0" />
+				<xs:element name="registro" type="xs:string" minOccurs="0" />
+				<xs:element name="documento" type="xs:string" minOccurs="0" />
+				<xs:element name="nome" type="xs:string" minOccurs="0" />
+				<xs:element name="nomeMae" type="xs:string" minOccurs="0" />
+				<xs:element name="dataNascimento" type="xs:string" minOccurs="0" />
+				<xs:element name="numeroRG" type="xs:string" minOccurs="0" />
+				<xs:element name="orgaoEmissor" type="xs:string" minOccurs="0" />
+				<xs:element name="unidadeFedarativaRG" type="xs:string" minOccurs="0" />
+				<xs:element name="dataEmissaoRG" type="xs:string" minOccurs="0" />
+				<xs:element name="sexoConsultado" type="xs:string" minOccurs="0" />
+				<xs:element name="cidadeNascimento" type="xs:string" minOccurs="0" />
+				<xs:element name="estadoCivil" type="xs:string" minOccurs="0" />
+				<xs:element name="numeroDependentes" type="xs:string" minOccurs="0" />
+				<xs:element name="grauInstrucao" type="xs:string" minOccurs="0" />
+				<xs:element name="situacaoReceita" type="xs:string" minOccurs="0" />
+				<xs:element name="dataAtualizacao" type="xs:string" minOccurs="0" />
+				<xs:element name="regiaoCpf" type="xs:string" minOccurs="0" />
+				<xs:element name="tituloEleitor" type="xs:string" minOccurs="0" />
+				<xs:element name="obito" type="xs:string" minOccurs="0" />
+				
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>

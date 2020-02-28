@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+		xmlns="http://boavistaservicos.com.br/familia/acerta/positivo/pf/resumo_devolucoes_informada_pelo_usuario" 
+		targetNamespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/resumo_devolucoes_informada_pelo_usuario" 
+		elementFormDefault="qualified">
+
+
+	<xs:element name="resumo_devolucoes_informada_pelo_usuario">
+		<xs:complexType>
+			<xs:sequence>		
+				<xs:element name="tamanhoRegistro" type="xs:string" minOccurs="0" />
+				<xs:element name="tipoRegistro" type="xs:string" minOccurs="0" />
+				<xs:element name="registro" type="xs:string" minOccurs="0" />
+				<xs:element name="tipoDocumento" type="xs:string" minOccurs="0" />
+				<xs:element name="numeroDocumento" type="xs:string" minOccurs="0" />
+				<xs:element name="total" type="xs:string" minOccurs="0" />
+				<xs:element name="dataPrimeiraDevolucao" type="xs:string" minOccurs="0" />
+				<xs:element name="dataUltimaDevolucao" type="xs:string" minOccurs="0" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>

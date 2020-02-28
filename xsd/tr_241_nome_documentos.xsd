@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+		xmlns="http://boavistaservicos.com.br/familia/acerta/positivo/pf/nome_documentos" 
+		targetNamespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/nome_documentos" 
+		elementFormDefault="qualified">
+
+
+	<xs:element name="nome_documentos">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="tamanhoRegistro" type="xs:string" minOccurs="0" />
+				<xs:element name="tipoRegistro" type="xs:string" minOccurs="0" />
+				<xs:element name="registro" type="xs:string" minOccurs="0" />
+				<xs:element name="nome" type="xs:string" minOccurs="0" />
+				<xs:element name="nascimento" type="xs:string" minOccurs="0" />
+				<xs:element name="tipoDocumento" type="xs:string" minOccurs="0" />
+				<xs:element name="numeroDocumento" type="xs:string" minOccurs="0" />
+				<xs:element name="documento_2" type="xs:string" minOccurs="0" />
+				<xs:element name="documento_3" type="xs:string" minOccurs="0" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>

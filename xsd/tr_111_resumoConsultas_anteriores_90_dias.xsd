@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+		xmlns="http://boavistaservicos.com.br/familia/acerta/positivo/pf/resumoConsultas_anteriores_90_dias" 
+		targetNamespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/resumoConsultas_anteriores_90_dias" 
+		elementFormDefault="qualified">
+
+
+	<xs:element name="resumoConsultas_anteriores_90_dias">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="tamanhoRegistro" type="xs:string" minOccurs="0" />
+				<xs:element name="tipoRegistro" type="xs:string" minOccurs="0" />
+				<xs:element name="registro" type="xs:string" minOccurs="0" />
+				<xs:element name="total" type="xs:string" minOccurs="0" />
+				<xs:element name="ano_1" type="xs:string" minOccurs="0" />
+				<xs:element name="mes_1" type="xs:string" minOccurs="0" />
+				<xs:element name="total_1" type="xs:string" minOccurs="0" />
+				<xs:element name="ano_2" type="xs:string" minOccurs="0" />
+				<xs:element name="mes_2" type="xs:string" minOccurs="0" />
+				<xs:element name="total_2" type="xs:string" minOccurs="0" />
+				<xs:element name="ano_3" type="xs:string" minOccurs="0" />
+				<xs:element name="mes_3" type="xs:string" minOccurs="0" />
+				<xs:element name="total_3" type="xs:string" minOccurs="0" />
+				<xs:element name="ano_4" type="xs:string" minOccurs="0" />
+				<xs:element name="mes_4" type="xs:string" minOccurs="0" />
+				<xs:element name="total_4" type="xs:string" minOccurs="0" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>

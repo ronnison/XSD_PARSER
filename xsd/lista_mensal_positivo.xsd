@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+		xmlns="http://boavistaservicos.com.br/familia/acerta/positivo/pf/lista_periodo" 
+		targetNamespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/lista_periodo" 
+		elementFormDefault="qualified">
+	
+	
+	<xs:element name="lista_periodo">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="item_periodo" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="item_periodo">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="mes_ano" type="xs:string" />
+				<xs:element name="valor" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	
+</xs:schema>

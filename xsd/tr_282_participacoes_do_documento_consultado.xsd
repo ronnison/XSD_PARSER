@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+		xmlns="http://boavistaservicos.com.br/familia/acerta/positivo/pf/participacoes_do_documento_consultado" 
+		targetNamespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/participacoes_do_documento_consultado" 
+		elementFormDefault="qualified">
+
+
+	<xs:element name="participacoes_do_documento_consultado">
+		<xs:complexType>
+			<xs:sequence>
+				
+				<xs:element name="tamanhoRegistro" type="xs:string" minOccurs="0" />
+				<xs:element name="tipoRegistro" type="xs:string" minOccurs="0" />
+				<xs:element name="registro" type="xs:string" minOccurs="0" />
+				<xs:element name="tipoDocumentoA" type="xs:string" minOccurs="0" />
+				<xs:element name="numeroDocumentoA" type="xs:string" minOccurs="0" />
+				<xs:element name="razaoSocial" type="xs:string" minOccurs="0" />
+				<xs:element name="tipoMoeda" type="xs:string" minOccurs="0" />
+				<xs:element name="valor" type="xs:string" minOccurs="0" />
+				<xs:element name="observacao" type="xs:string" minOccurs="0" />
+				<xs:element name="valorEmPercentual" type="xs:string" minOccurs="0" />
+				<xs:element name="dataDeEntrada" type="xs:string" minOccurs="0" />
+				<xs:element name="funcao" type="xs:string" minOccurs="0" />
+				<xs:element name="tipoDocumentoB" type="xs:string" minOccurs="0" />
+				<xs:element name="numeroDocumentoB" type="xs:string" minOccurs="0" />
+				<xs:element name="tipoSocio" type="xs:string" minOccurs="0" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+		xmlns="http://boavistaservicos.com.br/familia/acerta/positivo/pf/painel_controle_positivo" 
+		targetNamespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/painel_controle_positivo" 
+		elementFormDefault="qualified">
+		
+	<xs:element name="painel_controle_positivo">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="pontuacao_comprometimento"/>
+				<xs:element ref="nota_pontualidade"/>
+				<xs:element name="mensagem" type="xs:string" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	
+	<xs:element name="pontuacao_comprometimento">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="operacoes_parceladas"/>
+				<xs:element ref="cartao_credito_cheque_especial_e_outros_rotativos"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="nota_pontualidade">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="operacoes_parceladas"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+		
+	<xs:element name="operacoes_parceladas">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="item_painel_controle" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="cartao_credito_cheque_especial_e_outros_rotativos">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="item_painel_controle" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+
+	<xs:element name="item_painel_controle">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="descricao" type="xs:string" />
+				<xs:element name="valor" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+</xs:schema>

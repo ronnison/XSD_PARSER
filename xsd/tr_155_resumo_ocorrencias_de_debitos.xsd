@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+		xmlns="http://boavistaservicos.com.br/familia/acerta/positivo/pf/resumo_ocorrencias_de_debitos" 
+		targetNamespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/resumo_ocorrencias_de_debitos155" 
+		elementFormDefault="qualified">
+
+
+	<xs:element name="resumo_ocorrencias_de_debitos">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="tamanhoRegistro" type="xs:string" minOccurs="0" />
+				<xs:element name="tipoRegistro" type="xs:string" minOccurs="0" />
+				<xs:element name="registro" type="xs:string" minOccurs="0" />
+				<xs:element name="totalDevedor" type="xs:string" minOccurs="0" />
+				<xs:element name="totalAvalista" type="xs:string" minOccurs="0" />
+				<xs:element name="valorAcomulado" type="xs:string" minOccurs="0" />
+				<xs:element name="dataPrimeiroDebito" type="xs:string" minOccurs="0" />
+				<xs:element name="valorPrimeiroDebito" type="xs:string" minOccurs="0" />
+				<xs:element name="dataMaiorDebito" type="xs:string" minOccurs="0" />
+				<xs:element name="valorMaiorDebito" type="xs:string" minOccurs="0" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+		targetNamespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/mensagem"
+		elementFormDefault="qualified">
+		
+	<xs:element name="mensagem">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="codigo_erro" type="xs:string" minOccurs="0"/>
+				<xs:element name="mensagem_erro" type="xs:string" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+</xs:schema>
