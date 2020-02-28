@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+		xmlns="http://boavistaservicos.com.br/familia/acerta/positivo/pf/historico_cheque_informado" 
+		targetNamespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/historico_cheque_informado" 
+		elementFormDefault="qualified">
+
+
+	<xs:element name="historico_cheque_informado">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="tamanho" type="xs:string" minOccurs="0" />
+				<xs:element name="tipoRegistro" type="xs:string" minOccurs="0" />
+				<xs:element name="registro" type="xs:string" minOccurs="0" />
+				<xs:element name="tipoDocumento" type="xs:string" minOccurs="0" />
+				<xs:element name="numeroDocumento" type="xs:string" minOccurs="0" />
+				<xs:element name="banco" type="xs:string" minOccurs="0" />
+				<xs:element name="agencia" type="xs:string" minOccurs="0" />
+				<xs:element name="contaCorrente" type="xs:string" minOccurs="0" />
+				<xs:element name="cheque" type="xs:string" minOccurs="0" />
+				<xs:element name="dataConsulta" type="xs:string" minOccurs="0" />
+				<xs:element name="horaConsulta" type="xs:string" minOccurs="0" />
+				<xs:element name="rede" type="xs:string" minOccurs="0" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>

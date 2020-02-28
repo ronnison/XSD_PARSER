@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+		xmlns="http://boavistaservicos.com.br/familia/acerta/positivo/pf/erro" 
+		targetNamespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/outras_grafias" 
+		elementFormDefault="qualified">
+
+
+	<xs:element name="outras_grafias">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="tamanhoRegistro" type="xs:string" minOccurs="0" />
+				<xs:element name="tipoRegistro" type="xs:string" minOccurs="0" />
+				<xs:element name="registro" type="xs:string" minOccurs="0" />
+				<xs:element name="nome" type="xs:string" minOccurs="0" />
+				<xs:element name="cpf" type="xs:string" minOccurs="0" />
+				<xs:element name="dataNascimento" type="xs:string" minOccurs="0" />
+				<xs:element name="rg" type="xs:string" minOccurs="0" />
+				<xs:element name="tipo" type="xs:string" minOccurs="0" />
+				<xs:element name="nomeLogradouro" type="xs:string" minOccurs="0" />
+				<xs:element name="numero" type="xs:string" minOccurs="0" />
+				<xs:element name="complemento" type="xs:string" minOccurs="0" />
+				<xs:element name="bairro" type="xs:string" minOccurs="0" />
+				<xs:element name="cidade" type="xs:string" minOccurs="0" />
+				<xs:element name="uf" type="xs:string" minOccurs="0" />
+				<xs:element name="cep" type="xs:string" minOccurs="0" />
+				<xs:element name="ddd_1" type="xs:string" minOccurs="0" />
+				<xs:element name="telefone_1" type="xs:string" minOccurs="0" />
+				<xs:element name="ddd_2" type="xs:string" minOccurs="0" />
+				<xs:element name="telefone_2" type="xs:string" minOccurs="0" />
+				<xs:element name="ddd_3" type="xs:string" minOccurs="0" />
+				<xs:element name="telefone_3" type="xs:string" minOccurs="0" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>

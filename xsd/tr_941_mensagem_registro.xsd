@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+		xmlns="http://boavistaservicos.com.br/familia/acerta/positivo/pf/erro" 
+		targetNamespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/mensagem_registro_941" 
+		elementFormDefault="qualified">
+
+
+	<xs:element name="mensagem_registro_941">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="tamanhoRegistro" type="xs:string" minOccurs="0"  default="209"/>
+				<xs:element name="tipoRegistro" type="xs:string" minOccurs="0" default="940"/>
+				<xs:element name="registro" type="xs:string" minOccurs="0" />
+				<xs:element name="registroReferencia" type="xs:string" minOccurs="0" />
+				<xs:element name="moduloScore" type="xs:string" minOccurs="0" />
+				<xs:element name="texto" type="xs:string" minOccurs="0" />
+				
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>

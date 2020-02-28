@@ -88,7 +88,11 @@ for xsd in xsds:
                         classe.nome = val2[0]
                         #print(classe.nome)
                         i=1
+                    elif entidade[1][0:4] == 'ref=':
+                        print(entidade[1]);
+                        break;
                     else:
+                        print(entidade[1][0:4]);
                         val = entidade[2].split('type="xs:')
                         val2 = val[1].split('"')
                         #print(val2[0])
@@ -101,9 +105,9 @@ for xsd in xsds:
                         atrib.add_atributo(attrib1)
                         #print(attrib.getLista())
 
-    classe.atributo = atrib
+    classe.atributo = atrib;
 
-    arq = open (classe.nome + '.php', 'w')
+    arq = open ('php\\' + classe.nome + '.php', 'w');
 
     #print('<?php\npublic class ' + classe.nome + ' {')
     arq.write('<?php\npublic class ' + classe.nome + ' {')

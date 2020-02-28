@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+		xmlns="http://boavistaservicos.com.br/familia/acerta/positivo/pf/historico_mensal_positivo_pf"
+		xmlns:period="http://boavistaservicos.com.br/familia/acerta/positivo/pf/lista_periodo" 
+		targetNamespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/historico_mensal_positivo_pf" 
+		elementFormDefault="qualified">
+		
+	<xs:import namespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/lista_periodo" schemaLocation="./lista_mensal_positivo.xsd"/>			
+	
+	
+	<xs:element name="historico_mensal_positivo_pf">
+		<xs:complexType>
+			<xs:choice>
+				<xs:sequence>
+					<xs:element ref="qtde_total_compromissos"/>
+					<xs:element ref="bancos_financeiras" minOccurs="0"/>
+					<xs:element ref="varejo" minOccurs="0"/>
+					<xs:element ref="servicos_continuados" minOccurs="0"/>
+					<xs:element ref="valor_total"/>
+					<xs:element ref="saldo_rotativo"/>
+					<xs:element ref="valor_pago_moeda"/>
+					<xs:element ref="valor_porcentagem_pago"/>
+				</xs:sequence>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="qtde_total_compromissos">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="period:lista_periodo"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="bancos_financeiras">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="period:lista_periodo"/>
+				<xs:element ref="qtd_compromissos_if"/>
+				<xs:element ref="saldo_utilizado_outros_rotativos"/>
+				<xs:element ref="saldo_utilizado_cartao_credito"/>
+				<xs:element ref="saldo_pago_cartao_credito_moeda"/>
+				<xs:element ref="saldo_pago_cartao_credito_porcentagem"/>
+				<xs:element ref="valor_parcelados_consorcios_moeda"/>
+				<xs:element ref="valor_pago_parcelados_consorcios_moeda"/>
+				<xs:element ref="valor_pago_parcelados_consorcios_porcentagem"/>
+				<xs:element ref="segmentos"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="qtd_compromissos_if">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="period:lista_periodo"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="segmentos">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="segmento" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="segmento">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="nome_segmento" type="xs:string"/>
+				<xs:element ref="period:lista_periodo"/>
+				<xs:element ref="contratos" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	
+	<xs:element name="saldo_utilizado_outros_rotativos">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="period:lista_periodo"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="saldo_utilizado_cartao_credito">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="period:lista_periodo"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="saldo_pago_cartao_credito_moeda">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="period:lista_periodo"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="saldo_pago_cartao_credito_porcentagem">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="period:lista_periodo"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="valor_parcelados_consorcios_moeda">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="period:lista_periodo"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="valor_pago_parcelados_consorcios_moeda">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="period:lista_periodo"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+		
+	<xs:element name="valor_pago_parcelados_consorcios_porcentagem">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="period:lista_periodo"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="servicos_continuados">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="period:lista_periodo"/>
+				<xs:element ref="qtd_compromissos_serv_con"/>
+				<xs:element ref="valor_pago_serv_con_moeda"/>
+				<xs:element ref="valor_pago_serv_con_porcentagem"/>
+				<xs:element ref="segmentos"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="qtd_compromissos_serv_con">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="period:lista_periodo"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="valor_pago_serv_con_moeda">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="period:lista_periodo"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="valor_pago_serv_con_porcentagem">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="period:lista_periodo"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+		
+	<xs:element name="varejo">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="period:lista_periodo"/>
+				<xs:element ref="qtd_compromissos_varejo"/>
+				<xs:element ref="valor_pago_varejo_moeda"/>
+				<xs:element ref="valor_pago_varejo_porcentagem"/>
+				<xs:element ref="segmentos"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="qtd_compromissos_varejo">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="period:lista_periodo"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="valor_pago_varejo_moeda">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="period:lista_periodo"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="valor_pago_varejo_porcentagem">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="period:lista_periodo"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	
+	<xs:element name="valor_total">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="period:lista_periodo"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="saldo_rotativo">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="period:lista_periodo"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="valor_pago_moeda">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="period:lista_periodo"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="valor_porcentagem_pago">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="period:lista_periodo"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	
+	<xs:element name="contratos">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="contrato" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+		
+	<xs:element name="contrato">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="num_contrato" type="xs:string" />
+				<xs:element ref="period:lista_periodo"/>
+				<xs:element ref="detalhe_contrato"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="detalhe_contrato">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="identificacao" minOccurs="0"/>
+				<xs:element ref="dados_contrato" minOccurs="0"/>
+				<xs:element ref="historico_fatura" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="identificacao">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="cpf" type="xs:string" />
+				<xs:element name="nome" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="dados_contrato">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="modalidade" type="xs:string" minOccurs="0" />
+				<xs:element name="tipo_instituicao" type="xs:string" minOccurs="0"/>
+				<xs:element name="data_apuracao_fonte" type="xs:string" minOccurs="0"/>
+				<xs:element name="data_inicio_contrato" type="xs:string" minOccurs="0"/>
+				<xs:element name="valor_total_contrato" type="xs:string" minOccurs="0"/>
+				<xs:element name="qtd_total_parcelas" type="xs:string" minOccurs="0"/>
+				<xs:element name="data_ultima_parcela_contrato" type="xs:string" minOccurs="0"/>
+				<xs:element name="indexador" type="xs:string" minOccurs="0"/>
+				<xs:element name="saldo_devedor" type="xs:string" minOccurs="0"/>
+				<xs:element name="prox_fatura_vencer" type="xs:string" minOccurs="0"/>
+				<xs:element name="valor_prox_fatura" type="xs:string" minOccurs="0"/> 
+				<xs:element name="data_contemplacao_cota" type="xs:string" minOccurs="0"/>
+				<xs:element name="grupo" type="xs:string" minOccurs="0"/>
+				<xs:element name="cota" type="xs:string" minOccurs="0"/>
+				<xs:element name="sequencia_cota" type="xs:string" minOccurs="0" />
+				<xs:element name="situacao_cota" type="xs:string" minOccurs="0" /> 
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="historico_fatura">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="item_historico_fatura" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="item_historico_fatura">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="periodo_historico" type="xs:string"  minOccurs="0" />
+				<xs:element name="faixa_pontualidade" type="xs:string" minOccurs="0" />
+				<xs:element name="data_vencimento" type="xs:string" minOccurs="0" />
+				<xs:element name="data_pagamento" type="xs:string" minOccurs="0" />
+				<xs:element name="data_fechamento" type="xs:string" minOccurs="0" />
+				<xs:element name="saldo_utilizado_fechamento" type="xs:string" minOccurs="0" />
+				<xs:element name="status_pagamento" type="xs:string" minOccurs="0" />
+				<xs:element name="valor_total_pagar" type="xs:string" minOccurs="0" />
+				<xs:element name="valor_minimo" type="xs:string" minOccurs="0" />
+				<xs:element name="valor_pago_moeda" type="xs:string" minOccurs="0" />
+				<xs:element name="valor_pago_porcentagem" type="xs:string" minOccurs="0" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+</xs:schema>

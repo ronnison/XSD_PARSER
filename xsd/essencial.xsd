@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+		   xmlns:tr_020="http://boavistaservicos.com.br/familia/acerta/positivo/pf/resumo_de_acoes_civeis"
+		   xmlns:tr_021="http://boavistaservicos.com.br/familia/acerta/positivo/pf/relacao_de_acoes_civeis"
+		   xmlns:tr_108="http://boavistaservicos.com.br/familia/acerta/positivo/pf/resumo_ocorrencias_de_debitos"
+		   xmlns:tr_123="http://boavistaservicos.com.br/familia/acerta/positivo/pf/informacoes_complementares"
+		   xmlns:tr_124="http://boavistaservicos.com.br/familia/acerta/positivo/pf/debitos"
+		   xmlns:tr_131="http://boavistaservicos.com.br/familia/acerta/positivo/pf/telefone_vinculado_documento_informado"
+		   xmlns:tr_136="http://boavistaservicos.com.br/familia/acerta/positivo/pf/resumo_consultas_anteriores"
+		   xmlns:tr_137="http://boavistaservicos.com.br/familia/acerta/positivo/pf/relacao_consultas_anteriores_credito_segmento"
+		   xmlns:tr_142="http://boavistaservicos.com.br/familia/acerta/positivo/pf/titulos_protestados"
+		   xmlns:tr_146="http://boavistaservicos.com.br/familia/acerta/positivo/pf/resumo_titulos_protestados"
+		   xmlns:tr_211="http://boavistaservicos.com.br/familia/acerta/positivo/pf/cheque_talao_sustado"
+		   xmlns:tr_214="http://boavistaservicos.com.br/familia/acerta/positivo/pf/resumo_devolucoes_informadas_pelo_ccf"
+		   xmlns:tr_220="http://boavistaservicos.com.br/familia/acerta/positivo/pf/resumo_consultas_anteriores_cheque"
+		   xmlns:tr_223="http://boavistaservicos.com.br/familia/acerta/positivo/pf/confirmacao_telefone"
+		   xmlns:tr_224="http://boavistaservicos.com.br/familia/acerta/positivo/pf/endereco_telefones_agencia_bancaria"
+		   xmlns:tr_227="http://boavistaservicos.com.br/familia/acerta/positivo/pf/confirmacao_cep"
+		   xmlns:tr_241="http://boavistaservicos.com.br/familia/acerta/positivo/pf/nome_documentos"
+		   xmlns:tr_242="http://boavistaservicos.com.br/familia/acerta/positivo/pf/relacao_devolucoes_informadas_pelo_ccf"
+		   xmlns:tr_243="http://boavistaservicos.com.br/familia/acerta/positivo/pf/informacoes_complementares_cheque"	
+		   xmlns:tr_244="http://boavistaservicos.com.br/familia/acerta/positivo/pf/devolucoes_informadas_pelo_usuario"
+		   xmlns:tr_245="http://boavistaservicos.com.br/familia/acerta/positivo/pf/cheques_sustados_pelo_motivo_21"
+		   xmlns:tr_246="http://boavistaservicos.com.br/familia/acerta/positivo/pf/historico_cheque_informado"
+		   xmlns:tr_247="http://boavistaservicos.com.br/familia/acerta/positivo/pf/historico_conta_corrente_informada"
+		   xmlns:tr_248="http://boavistaservicos.com.br/familia/acerta/positivo/pf/consultas_anteriores_cheque"
+		   xmlns:tr_268="http://boavistaservicos.com.br/familia/acerta/positivo/pf/resumo_devolucoes_informada_pelo_usuario"
+		   xmlns:tr_282="http://boavistaservicos.com.br/familia/acerta/positivo/pf/participacoes_do_documento_consultado"
+		   xmlns:tr_295="http://boavistaservicos.com.br/familia/acerta/positivo/pf/relacao_falencia_recuperacao_judicial"
+		   xmlns:tr_500="http://boavistaservicos.com.br/familia/acerta/positivo/pf/identificacao"
+		   xmlns:tr_501="http://boavistaservicos.com.br/familia/acerta/positivo/pf/localizacao" 
+		   xmlns:tr_502="http://boavistaservicos.com.br/familia/acerta/positivo/pf/outras_grafias"
+		   xmlns:tr_601="http://boavistaservicos.com.br/familia/acerta/positivo/pf/score_classificacao_varios_modelos"
+		   xmlns:tr_603="http://boavistaservicos.com.br/familia/acerta/positivo/pf/decisao"
+		   xmlns:tr_940="http://boavistaservicos.com.br/familia/acerta/positivo/pf/mensagem_registro"
+		   xmlns:tr_999="http://boavistaservicos.com.br/familia/acerta/positivo/pf/erro"   
+	elementFormDefault="qualified">
+	
+	<xs:import namespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/resumo_de_acoes_civeis" 
+	           schemaLocation="tr_020_resumo_de_acoes_civeis.xsd"/>
+	
+	<xs:import namespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/relacao_de_acoes_civeis" 
+	           schemaLocation="tr_021_relacao_de_acoes_civeis.xsd"/>
+
+	<xs:import namespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/resumo_ocorrencias_de_debitos" 
+	           schemaLocation="tr_108_resumo_ocorrencias_de_debitos.xsd"/>
+   
+	<xs:import namespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/informacoes_complementares" 
+	           schemaLocation="tr_123_informacoes_complementares.xsd"/>
+	
+	<xs:import namespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/debitos" 
+	           schemaLocation="tr_124_debitos.xsd"/>
+	
+	<xs:import namespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/telefone_vinculado_documento_informado" 
+	           schemaLocation="tr_131_telefone_vinculado_documento_informado.xsd"/>
+
+	<xs:import namespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/resumo_consultas_anteriores" 
+	           schemaLocation="tr_136_resumo_consultas_anteriores.xsd"/>
+      
+	<xs:import namespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/relacao_consultas_anteriores_credito_segmento" 
+	           schemaLocation="tr_137_relacao_consultas_anteriores_credito_segmento.xsd"/>
+	           
+	<xs:import namespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/titulos_protestados" 
+	           schemaLocation="tr_142_titulos_protestados_unificados.xsd"/>
+	           
+	<xs:import namespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/resumo_titulos_protestados" 
+	           schemaLocation="tr_146_resumo_titulos_protestados_unificados.xsd"/>
+  
+	<xs:import namespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/cheque_talao_sustado" 
+	           schemaLocation="tr_211_cheque_talao_sustado.xsd"/>
+
+	<xs:import namespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/resumo_devolucoes_informadas_pelo_ccf" 
+	           schemaLocation="tr_214_resumo_devolucoes_informadas_pelo_ccf.xsd"/>      
+	           
+	<xs:import namespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/resumo_consultas_anteriores_cheque" 
+	           schemaLocation="tr_220_resumo_consultas_anteriores_cheque.xsd"/>
+          
+	<xs:import namespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/confirmacao_telefone" 
+	           schemaLocation="tr_223_confirmacao_telefone.xsd"/>
+         
+    <xs:import namespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/endereco_telefones_agencia_bancaria" 
+	           schemaLocation="tr_224_endereco_telefones_agencia_bancaria.xsd"/>
+	
+	<xs:import namespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/confirmacao_cep" 
+	           schemaLocation="tr_227_confirmacao_cep.xsd"/>
+	                      
+	<xs:import namespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/nome_documentos" 
+	           schemaLocation="tr_241_nome_documentos.xsd"/>
+	           	           
+	<xs:import namespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/relacao_devolucoes_informadas_pelo_ccf" 
+	           schemaLocation="tr_242_relacao_devolucoes_informadas_pelo_ccf.xsd"/>
+
+	<xs:import namespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/informacoes_complementares_cheque" 
+	           schemaLocation="tr_243_informacoes_complementares_cheque.xsd"/>
+  
+	<xs:import namespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/relacao_de_acoes_civeis" 
+	           schemaLocation="tr_021_relacao_de_acoes_civeis.xsd"/>
+	           
+	<xs:import namespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/devolucoes_informadas_pelo_usuario" 
+	           schemaLocation="tr_244_devolucoes_informadas_pelo_usuario.xsd"/>
+      
+	<xs:import namespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/cheques_sustados_pelo_motivo_21" 
+	           schemaLocation="tr_245_cheques_sustados_pelo_motivo_21.xsd"/>
+	
+	<xs:import namespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/historico_cheque_informado" 
+	           schemaLocation="tr_246_historico_cheque_informado.xsd"/>
+	           
+	<xs:import namespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/historico_conta_corrente_informada" 
+	           schemaLocation="tr_247_historico_conta_corrente_informada.xsd"/> 
+	
+	<xs:import namespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/consultas_anteriores_cheque" 
+	           schemaLocation="tr_248_consultas_anteriores_cheque.xsd"/>     
+	     
+	<xs:import namespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/resumo_devolucoes_informada_pelo_usuario" 
+	           schemaLocation="tr_268_resumo_devolucoes_informada_pelo_usuario.xsd"/>
+	 
+	<xs:import namespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/participacoes_do_documento_consultado" 
+	           schemaLocation="tr_282_participacoes_do_documento_consultado.xsd"/>
+	           
+	<xs:import namespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/relacao_falencia_recuperacao_judicial" 
+	           schemaLocation="tr_295_Relacao_Falencia_Recuperacao_Judicial.xsd"/>
+	                     
+	<xs:import namespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/identificacao" 
+	           schemaLocation="tr_500_identificacao.xsd"/>
+	           
+	 <xs:import namespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/localizacao" 
+	           schemaLocation="tr_501_localizacao.xsd"/>          
+	           
+	<xs:import namespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/outras_grafias" 
+	           schemaLocation="tr_502_outras_grafias.xsd"/>
+	           
+	<xs:import namespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/score_classificacao_varios_modelos" 
+	           schemaLocation="tr_601_score_classificacao_varios_modelos.xsd"/>
+	           
+	<xs:import namespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/decisao" 
+	           schemaLocation="tr_603_decisao.xsd"/>
+
+	<xs:import namespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/mensagem_registro" 
+	           schemaLocation="tr_940_mensagem_registro.xsd"/>
+	           
+	<xs:import namespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/erro" 
+	           schemaLocation="tr_999_erro.xsd"/>
+	
+	<xs:element name="essencial">
+		<xs:complexType>
+			<xs:choice>
+				<xs:sequence>
+					<xs:element ref="tr_020:resumo_de_acoes_civeis" minOccurs="0"/>
+					<xs:element ref="tr_021:relacao_de_acoes_civeis" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="tr_108:resumo_ocorrencias_de_debitos" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="tr_123:informacoes_complementares" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="tr_124:debitos" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="tr_131:telefone_vinculado_documento_informado" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="tr_136:resumo_consultas_anteriores" minOccurs="0" />
+					<xs:element ref="tr_137:relacao_consultas_anteriores_credito_segmento" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="tr_142:titulos_protestados" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="tr_146:resumo_titulos_protestados" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="tr_211:cheque_talao_sustado" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="tr_214:resumo_devolucoes_informadas_pelo_ccf" minOccurs="0"/>
+					<xs:element ref="tr_220:resumo_consultas_anteriores_cheque" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="tr_223:confirmacao_telefone" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="tr_224:endereco_telefones_agencia_bancaria" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="tr_227:confirmacao_cep" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="tr_241:nome_documentos" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="tr_242:relacao_devolucoes_informadas_pelo_ccf" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="tr_243:informacoes_complementares_cheque" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="tr_244:devolucoes_informadas_pelo_usuario" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="tr_245:cheques_sustados_pelo_motivo_21" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="tr_246:historico_cheque_informado" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="tr_247:historico_conta_corrente_informada" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="tr_248:consultas_anteriores_cheque" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="tr_268:resumo_devolucoes_informada_pelo_usuario" minOccurs="0"/>
+					<xs:element ref="tr_282:participacoes_do_documento_consultado" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="tr_295:relacao_falencia_recuperacao_judicial" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="tr_500:identificacao" minOccurs="0" />
+					<xs:element ref="tr_501:localizacao" minOccurs="0" />
+					<xs:element ref="tr_502:outras_grafias" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="tr_601:score_classificacao_varios_modelos" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="tr_603:decisao" minOccurs="0"/>
+					<xs:element ref="tr_940:mensagem_registro" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="tr_999:erro" minOccurs="0" />
+				</xs:sequence>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

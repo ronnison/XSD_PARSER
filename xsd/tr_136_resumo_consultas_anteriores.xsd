@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+		xmlns="http://boavistaservicos.com.br/familia/acerta/positivo/pf/resumo_consultas_anteriores" 
+		targetNamespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/resumo_consultas_anteriores" 
+		elementFormDefault="qualified">
+
+
+	<xs:element name="resumo_consultas_anteriores">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="tamanhoRegistro" type="xs:string" minOccurs="0" />
+				<xs:element name="tipoRegistro"	type="xs:string" minOccurs="0" />
+				<xs:element name="registro"	 type="xs:string" minOccurs="0" />
+				<xs:element name="tipoDocumento" type="xs:string" minOccurs="0" />
+				<xs:element name="numeroDocumento" type="xs:string" minOccurs="0" />
+				<xs:element name="totalDeConsultas" type="xs:string" minOccurs="0" />
+				<xs:element name="periodoInicial"	 type="xs:string" minOccurs="0" />
+				<xs:element name="periodoFinal" type="xs:string" minOccurs="0" />
+				<xs:element name="totalUltimoMes" type="xs:string" minOccurs="0" />
+				<xs:element name="periodo" type="xs:string" minOccurs="0" />
+				<xs:element name="totalPenultimoMes" type="xs:string" minOccurs="0" />
+				<xs:element name="periodoPenultimoMes" type="xs:string" minOccurs="0" />
+				<xs:element name="totalAntePenultimoMes" type="xs:string" minOccurs="0" />
+				<xs:element name="periodoAntePenultimoMes" type="xs:string" minOccurs="0" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>

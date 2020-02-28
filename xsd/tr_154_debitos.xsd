@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+		xmlns="http://boavistaservicos.com.br/familia/acerta/positivo/pf/debitos" 
+		targetNamespace="http://boavistaservicos.com.br/familia/acerta/positivo/pf/debitos154" 
+		elementFormDefault="qualified">
+
+
+	<xs:element name="debitos">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="tamanhoRegistro" type="xs:string" minOccurs="0" />
+				<xs:element name="tipoRegistro" type="xs:string" minOccurs="0" />
+				<xs:element name="registro" type="xs:string" minOccurs="0" />
+				<xs:element name="tipoOcorrencia" type="xs:string" minOccurs="0" />
+				<xs:element name="contrato" type="xs:string" minOccurs="0" />
+				<xs:element name="dataOcorrencia" type="xs:string" minOccurs="0" />
+				<xs:element name="dataDisponibilizacao" type="xs:string" minOccurs="0" />
+				<xs:element name="moeda" type="xs:string" minOccurs="0" />
+				<xs:element name="valor" type="xs:string" minOccurs="0" />
+				<xs:element name="situacao" type="xs:string" minOccurs="0" />
+				<xs:element name="informante" type="xs:string" minOccurs="0" />
+				<xs:element name="informadoPeloConsulente" type="xs:string" minOccurs="0" />
+				<xs:element name="cidade" type="xs:string" minOccurs="0" />
+				<xs:element name="uf" type="xs:string" minOccurs="0" />
+				<xs:element name="condicao" type="xs:string" minOccurs="0" />
+				<xs:element name="condicaoMunicipio" type="xs:string" minOccurs="0" />
+				<xs:element name="segmento" type="xs:string" minOccurs="0" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>
